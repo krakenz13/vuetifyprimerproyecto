@@ -9,8 +9,7 @@
           @click="isSidebarMinimized = !isSidebarMinimized"
         />
 
-          <vuestic-logo class="logo" />
-       
+        <vuestic-logo class="logo" />
       </div>
     </template>
     <template #center>
@@ -112,19 +111,19 @@
     }
   }
   .logo {
-  max-width: 100%;
-  height: auto;
-}
-
-@media (max-width: 768px) {
-  .logo {
-    max-width: 80%;
+    max-width: 100%;
+    height: auto;
   }
-}
 
-@media (max-width: 480px) {
-  .logo {
-    max-width: 60%;
+  @media (max-width: 768px) {
+    .logo {
+      max-width: 80%;
+    }
   }
-}
+
+  @media (max-width: 480px) {
+    .logo {
+      max-width: 60%;
+    }
+  }
 </style>

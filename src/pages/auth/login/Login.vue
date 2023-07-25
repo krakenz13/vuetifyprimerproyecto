@@ -29,7 +29,7 @@
       <va-button class="my-0" @click="onsubmit">{{ t('auth.login') }}</va-button>
     </div>
 
-    <hr>
+    <hr />
 
     <ul>
       <li>

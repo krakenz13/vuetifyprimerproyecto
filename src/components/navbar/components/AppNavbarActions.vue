@@ -4,21 +4,17 @@
     <!-- <message-dropdown class="app-navbar-actions__item" />
     <notification-dropdown class="app-navbar-actions__item" /> -->
     <settings-dropdown class="app-navbar-actions__item" />
-    <language-dropdown class="app-navbar-actions__item" /> 
+    <language-dropdown class="app-navbar-actions__item" />
     <profile-dropdown class="app-navbar-actions__item app-navbar-actions__item--profile">
-      
       <span>
         <!-- {{ userName }} -->
         {{ t('user.name') }}
       </span>
-      
-      </profile-dropdown>
-    
+    </profile-dropdown>
   </div>
 </template>
 
 <script setup lang="ts">
-
   import { useI18n } from 'vue-i18n'
 
   import LanguageDropdown from './dropdowns/LanguageDropdown.vue'

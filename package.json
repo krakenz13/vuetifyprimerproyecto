@@ -8,7 +8,7 @@
     "build": "npm run lint && vue-tsc --noEmit && vite build",
     "build:ci": "vite build",
     "prelint": "npm run format",
-    "lint": "eslint --fix './src/**/*.{ts,js,vue}'",
+    "lint": "eslint --fix src/**/*.{js,vue,ts}",
     "format": "prettier --write .",
     "preview": "vite preview"
   },
@@ -41,7 +41,8 @@
     "vue-router": "^4.0.14",
     "vue-yandex-maps": "^0.12.3",
     "vuestic-ui": "^1.5.0",
-    "vuetify": "^3.3.5"
+    "vuetify": "^3.3.5",
+    "vuex": "^4.0.2"
   },
   "devDependencies": {
     "@intlify/vite-plugin-vue-i18n": "^5.0.1",
@@ -51,6 +52,7 @@
     "@typescript-eslint/eslint-plugin": "^5.20.0",
     "@typescript-eslint/parser": "^5.20.0",
     "@vitejs/plugin-vue": "^2.3.3",
+    "@vue/compiler-sfc": "^3.3.4",
     "@vue/eslint-config-prettier": "^7.0.0",
     "@vue/eslint-config-typescript": "^10.0.0",
     "autoprefixer": "^10.4.4",
@@ -61,7 +63,7 @@
     "lint-staged": "^13.0.1",
     "postcss": "^8.4.12",
     "prettier": "^2.6.2",
-    "typescript": "^4.5.4",
+    "typescript": "^4.9.5",
     "vite": "^2.9.13",
     "vue-eslint-parser": "^8.3.0",
     "vue-tsc": "^0.35.0"

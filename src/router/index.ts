@@ -17,7 +17,6 @@ import createEstudianteComponent from '../components/estudiantes/createEstudiant
 import estudianteViewsComponent from '../components/estudiantes/estudianteViews.vue'
 import estudianteEditComponent from '../components/estudiantes/estudianteEdit.vue'
 
-
 const routes: Array<RouteRecordRaw> = [
   {
     path: '/:catchAll(.*)',
@@ -27,23 +26,23 @@ const routes: Array<RouteRecordRaw> = [
     name: 'auth',
     path: '/',
     component: AuthLayout,
-      children: [
-        {
-          name: 'login',
-          path: 'login',
-          component: LoginComponent,
-        },
-        {
-          name: 'signup',
-          path: 'signup',
-          component: SignupComponent,
-        },  
-        {
-          name: 'recover-password',
-          path: 'recover-password',
-          component: RecoverPasswordComponent,
-        },
-      ]
+    children: [
+      {
+        name: 'login',
+        path: 'login',
+        component: LoginComponent,
+      },
+      {
+        name: 'signup',
+        path: 'signup',
+        component: SignupComponent,
+      },
+      {
+        name: 'recover-password',
+        path: 'recover-password',
+        component: RecoverPasswordComponent,
+      },
+    ],
   },
   {
     name: 'admin',
@@ -71,17 +70,15 @@ const routes: Array<RouteRecordRaw> = [
             component: estudianteViewsComponent,
           },
           {
-            name:'gestion-estudiantes-editar-estudiates',
+            name: 'gestion-estudiantes-editar-estudiates',
             path: 'editar',
             component: estudianteEditComponent,
-          }
-          
-        ]
+          },
+        ],
       },
-    ]
-  }
+    ],
+  },
 ]
-
 
 // const routesOriginal: Array<RouteRecordRaw> = [
 //   {

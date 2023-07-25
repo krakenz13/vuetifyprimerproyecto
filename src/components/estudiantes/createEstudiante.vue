@@ -10,7 +10,6 @@
           <v-icon>mdi:mdi-home</v-icon>
         </v-btn>
       </v-toolbar>
-      
 
       <v-row no-gutters>
         <v-col md="4">
@@ -44,5 +43,3 @@
     </v-card>
   </form>
 </template>
-
-
