@@ -1,8 +1,11 @@
 import client from '../clients/Client'
 import TokenService from './TokenService'
+import { Module } from 'vuex'
 import { AxiosError, AxiosRequestConfig, AxiosResponse } from 'axios'
+import AuthState from '../interfaces/AuthState'
+import RootState from '../interfaces/RootState'
 
-export const interceptor = (store: any): void => {
+export const interceptor = (store: Module<AuthState, RootState>): void => {
   client.interceptors.request.use(
     (config: AxiosRequestConfig) => {
       const token = TokenService.getLocalAccessToken()

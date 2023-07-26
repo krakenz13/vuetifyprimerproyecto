@@ -1,5 +1,6 @@
 import { AxiosRequestConfig, AxiosResponse } from 'axios'
 import client from './Client'
+import ModelOne from '../interfaces/ModelOne'
 
 class HttpClientAdapter {
   async get<T>(url: string, config?: AxiosRequestConfig): Promise<T> {
@@ -7,12 +8,12 @@ class HttpClientAdapter {
     return response.data
   }
 
-  async post<T>(url: string, data?: any, config?: AxiosRequestConfig): Promise<T> {
+  async post<T>(url: string, data?: ModelOne, config?: AxiosRequestConfig): Promise<T> {
     const response: AxiosResponse<T> = await client.post<T>(url, data, config)
     return response.data
   }
 
-  async put<T>(url: string, data?: any, config?: AxiosRequestConfig): Promise<T> {
+  async put<T>(url: string, data?: ModelOne, config?: AxiosRequestConfig): Promise<T> {
     const response: AxiosResponse<T> = await client.put<T>(url, data, config)
     return response.data
   }

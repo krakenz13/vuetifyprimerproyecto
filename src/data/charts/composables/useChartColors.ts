@@ -19,7 +19,7 @@ export function useChartColors(chartColors = [] as chartColors, alfa = 0.6) {
   const generatedHSLAColors = ref(generateHSLAColors(chartColors))
   const generatedColors = ref(generateColors(chartColors))
 
-  const theme = computed(() => getGlobalConfig().colors!)
+  const theme = computed(() => getGlobalConfig().colors ?? '')
 
   watch(theme, () => {
     generatedHSLAColors.value = generateHSLAColors(chartColors)

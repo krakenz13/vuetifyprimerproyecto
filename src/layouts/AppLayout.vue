@@ -29,8 +29,8 @@
 
   import { useGlobalStore } from '../stores/global-store'
 
-  import Navbar from '../components/navbar/Navbar.vue'
-  import Sidebar from '../components/sidebar/Sidebar.vue'
+  import Navbar from '../components/navbar/AppNavbar.vue'
+  import Sidebar from '../components/sidebar/AppSidebar.vue'
 
   const GlobalStore = useGlobalStore()
 

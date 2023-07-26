@@ -2,16 +2,16 @@ import { createRouter, createWebHistory, RouteRecordRaw } from 'vue-router'
 
 import AuthLayout from '../layouts/AuthLayout.vue'
 import AppLayout from '../layouts/AppLayout.vue'
-import Page404Layout from '../layouts/Page404Layout.vue'
+// import Page404Layout from '../layouts/Page404Layout.vue'
 
 import RouteViewComponent from '../layouts/RouterBypass.vue'
-import UIRoute from '../pages/admin/ui/route'
+// import UIRoute from '../pages/admin/ui/route'
 
 import LoginComponent from '../pages/auth/login/Login.vue'
 import SignupComponent from '../pages/auth/signup/Signup.vue'
 import RecoverPasswordComponent from '../pages/auth/recover-password/RecoverPassword.vue'
 
-import DashboardComponent from '../pages/admin/dashboard/Dashboard.vue'
+// import DashboardComponent from '../pages/admin/dashboard/Dashboard.vue'
 import ListadoEstudiantesComponent from '../components/estudiantes/ListadoEstudiantes.vue'
 import createEstudianteComponent from '../components/estudiantes/createEstudiante.vue'
 import estudianteViewsComponent from '../components/estudiantes/estudianteViews.vue'

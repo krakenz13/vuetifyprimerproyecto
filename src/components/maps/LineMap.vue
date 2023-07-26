@@ -118,10 +118,10 @@
     )
 
     // point series bullets
-    const bulletTemplate = am5.Template.new({}) as am5.Template<am5.Graphics>
-    bulletTemplate.events.on('click', (ev) => {
-      mainCity.value = (ev as any).target._dataItem.dataContext.title
-    })
+    // const bulletTemplate = am5.Template.new({}) as am5.Template<am5.Graphics>
+    // bulletTemplate.events.on('click', (ev) => {
+    //   mainCity.value = (ev as any).target._dataItem.dataContext.title
+    // })
 
     pointSeries.bullets.push((root, series, dataItem) => {
       const itemData = dataItem.dataContext as CityItem
@@ -140,7 +140,7 @@
             scale: isMainCity ? 1.5 : 1,
             tooltipText: '{title}',
           },
-          bulletTemplate,
+          // bulletTemplate,
         ),
       })
     })
